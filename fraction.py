@@ -59,7 +59,7 @@ class Fraction:
 
 
     def __sub__(self, frac):
-        """Return the substraction of two fractions as a new fraction.
+        """Return the difference of two fractions as a new fraction.
         Use the standard formula  a/b - c/d = (ad-bc)/(b*d)
         """
         numerator = ((self.numerator * frac.denominator)-(self.denominator * frac.numerator))
@@ -69,7 +69,8 @@ class Fraction:
 
 
     def __mul__(self,frac) :
-        """Return the multiple of two fractions as a new fraction.
+        """Return the product of two fractions as a new fraction.
+        Use the standard formula  a/b * c/d = (ac)/(bd)
         """
         numerator = self.numerator * frac.numerator
         denominator = self.denominator * frac.denominator
@@ -86,6 +87,8 @@ class Fraction:
 
 
     def __gt__(self,frac) :
+        """Return whether itself greater than another or not 
+        """
          
         first = self.numerator * frac.denominator
         second = self.denominator * frac.numerator
@@ -94,6 +97,8 @@ class Fraction:
 
         
     def __neg__(self) :
+        """Return the negative of fraction
+        """
          
         return Fraction(-self.numerator,self.denominator)
 

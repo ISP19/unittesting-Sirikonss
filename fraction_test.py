@@ -84,6 +84,7 @@ class FractionTest(unittest.TestCase):
 
 
     def test_gt(self):
+        
         f = Fraction(4,5)
         g = Fraction(7,8)
         self.assertFalse(f.__gt__(g))
