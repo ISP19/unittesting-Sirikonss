@@ -17,7 +17,7 @@ class Fraction:
 
         if denominator == 0 :
             if numerator == 0 :
-                raise ValueError
+                denominator = 0
             elif numerator > 0 :
                 numerator = 1
                 denominator = 0
@@ -30,9 +30,13 @@ class Fraction:
         elif numerator > 0 and denominator < 0 :
             numerator = -numerator
             denominator = abs(denominator)
-        
-        self.numerator = numerator//math.gcd(numerator,denominator)
-        self.denominator = denominator//math.gcd(numerator,denominator)
+
+        if numerator == 0 and denominator == 0 :
+            self.numerator = 0 
+            self.denominator = 0
+        else:
+            self.numerator = numerator//math.gcd(numerator,denominator)
+            self.denominator = denominator//math.gcd(numerator,denominator)
 
 
     def __str__(self):
@@ -52,6 +56,10 @@ class Fraction:
         """Return the sum of two fractions as a new fraction.
            Use the standard formula  a/b + c/d = (ad+bc)/(b*d)
         """
+        if (self.denominator == 0 and self.numerator == 0) or (frac.numerator == 0 and frac.denominator == 0 ) :
+            numerator = 0
+            denominator = 0
+            
         numerator = ((self.numerator * frac.denominator)+(self.denominator * frac.numerator))
         denominator = (self.denominator * frac.denominator)
     
@@ -62,6 +70,10 @@ class Fraction:
         """Return the difference of two fractions as a new fraction.
         Use the standard formula  a/b - c/d = (ad-bc)/(b*d)
         """
+        if (self.denominator == 0 and self.numerator == 0) or (frac.numerator == 0 and frac.denominator == 0 ) :
+            numerator = 0
+            denominator = 0
+
         numerator = ((self.numerator * frac.denominator)-(self.denominator * frac.numerator))
         denominator = (self.denominator * frac.denominator)
     
@@ -72,6 +84,10 @@ class Fraction:
         """Return the product of two fractions as a new fraction.
         Use the standard formula  a/b * c/d = (ac)/(bd)
         """
+        if (self.denominator == 0 and self.numerator == 0) or (frac.numerator == 0 and frac.denominator == 0 ) :
+            numerator = 0
+            denominator = 0
+
         numerator = self.numerator * frac.numerator
         denominator = self.denominator * frac.denominator
 
