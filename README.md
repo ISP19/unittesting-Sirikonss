@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/sirikonss/unittesting-sirikonss.svg?branch=master)](https://travis-ci.com/sirikonss/unittesting-sirikonss)
+
 ## Unit Testing Assignment
 
 by Sirikon Songsaengthong.
