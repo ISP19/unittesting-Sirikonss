@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/sirikonss/unittesting-sirikonss.svg?branch=master)](https://travis-ci.com/sirikonss/unittesting-sirikonss)
+[![Build Status](https://travis-ci.com/Sirikonss/unittesting-Sirikonss.svg?branch=master)](https://travis-ci.com/Sirikonss/unittesting-Sirikonss)
 
 ## Unit Testing Assignment
 
