@@ -18,4 +18,5 @@ script:
   - coverage run fraction_test.py
 
 after_success:
+  - export CODECOV_TOKEN="6f671d19-122b-41ac-a1c3-8e1c81b22083"
   - codecov
