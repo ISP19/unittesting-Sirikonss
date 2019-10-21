@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/Sirikonss/unittesting-Sirikonss.svg?branch=master)](https://travis-ci.com/Sirikonss/unittesting-Sirikonss)
-
+[![codecov](https://codecov.io/gh/Sirikonss/unittesting-Sirikonss/branch/master/graph/badge.svg)](https://codecov.io/gh/Sirikonss/unittesting-Sirikonss)
 ## Unit Testing Assignment
 
 by Sirikon Songsaengthong.
